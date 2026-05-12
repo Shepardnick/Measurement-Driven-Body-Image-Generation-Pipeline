@@ -12,7 +12,7 @@ the diff between versions is part of the project's reasoning record.
 
 | #   | Slug | Latest | Status | Summary |
 | --- | ---- | ------ | ------ | ------- |
-| _no passes yet_ | | | | |
+| 1   | [primitive-render-scaffold](pass-1-primitive-render-scaffold/v1.md) | v1 | executed | End-to-end `measurements → primitive humanoid mesh → 8-view PNG renders` scaffold using ellipsoids and capsules in place of SMPL-X. Matplotlib renderer (pyrender's PyOpenGL build broke on this env). |
 
 ## Status legend
 
