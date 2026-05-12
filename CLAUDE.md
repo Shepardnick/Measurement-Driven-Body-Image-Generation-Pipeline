@@ -71,3 +71,51 @@ honest analysis. The analysis still happens.
 For genuinely trivial exchanges — greetings, acknowledgments, quick
 clarifications — just respond naturally. Don't perform the discipline when
 there's nothing to apply it to.
+
+## Pass-based planning workflow (this project)
+
+This project uses an explicit, version-controlled planning workflow in place
+of Claude Code's built-in plan mode. Use it for any task that requires
+planning before code is written.
+
+The loop:
+
+1. **Think.** Architect a structured pass — the what, why, where, when, and
+   how of the change. Identify files, dependencies, risks, acceptance
+   criteria, and at least one alternative approach. Do the reasoning before
+   writing the document, not after.
+
+2. **Save v1 to disk.** Create `passes/pass-<N>-<slug>/v1.md` containing the
+   full pass. `N` is the next sequential pass number (look at the existing
+   folders); `slug` is a short kebab-case description (e.g.
+   `pass-3-shape-optimizer`).
+
+3. **Write the full pass into the chat.** Reproduce the pass content inline
+   so the user can read and critique it without opening the file.
+
+4. **Stop.** Do not start implementing. Do not begin scaffolding code "to
+   save time." Wait for feedback.
+
+5. **On feedback,** think it through, revise, save the next version
+   (`v2.md`, `v3.md`, …) — never overwrite an earlier version — reproduce
+   the new pass in chat, and stop again.
+
+6. **On the user's explicit go-ahead to execute,** implement the pass. Only
+   then write code. The latest `vN.md` is the spec.
+
+After every save or revision, update `passes/README.md` with the pass's
+number, slug, current version, one-line summary, and status
+(`draft` / `approved` / `executed` / `superseded`).
+
+**Required sections in every pass file:**
+
+- **Goal** — one sentence: what this pass accomplishes.
+- **Context** — why now; what it depends on; what depends on it.
+- **Approach** — the plan: files to create or modify, logic, data flow.
+- **Alternatives considered** — at least one, with why it was rejected.
+- **Risks & open questions** — what could go wrong; what's still uncertain.
+- **Acceptance criteria** — concrete signals that the pass is done.
+- **Out of scope** — what this pass deliberately does not do.
+
+The "stop" step is non-negotiable. The user controls when implementation
+starts; the pass workflow exists to prevent premature coding.
