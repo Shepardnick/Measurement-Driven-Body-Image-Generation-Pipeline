@@ -1,0 +1,2992 @@
+{
+  "Abdomen_Mass": {
+    "compound_with": [
+      "Abdomen_Tone"
+    ],
+    "measurement_relevant": true,
+    "region": "abdomen",
+    "stored_corners": [
+      "Abdomen_Mass-Tone_max-max",
+      "Abdomen_Mass-Tone_max-min",
+      "Abdomen_Mass-Tone_min-max",
+      "Abdomen_Mass-Tone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Abdomen_Tone": {
+    "compound_with": [
+      "Abdomen_Mass"
+    ],
+    "measurement_relevant": true,
+    "region": "abdomen",
+    "stored_corners": [
+      "Abdomen_Mass-Tone_max-max",
+      "Abdomen_Mass-Tone_max-min",
+      "Abdomen_Mass-Tone_min-max",
+      "Abdomen_Mass-Tone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Armpit_PosZ": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "arms",
+    "stored_corners": [
+      "Armpit_PosZ_max",
+      "Armpit_PosZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Arms_ForearmLength": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "arms",
+    "stored_corners": [
+      "Arms_ForearmLength_max",
+      "Arms_ForearmLength_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Arms_ForearmMass": {
+    "compound_with": [
+      "Arms_ForearmTone"
+    ],
+    "measurement_relevant": true,
+    "region": "arms",
+    "stored_corners": [
+      "Arms_ForearmMass-ForearmTone_max-max",
+      "Arms_ForearmMass-ForearmTone_max-min",
+      "Arms_ForearmMass-ForearmTone_min-max",
+      "Arms_ForearmMass-ForearmTone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Arms_ForearmSize": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "arms",
+    "stored_corners": [
+      "Arms_ForearmSize_max",
+      "Arms_ForearmSize_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Arms_ForearmTone": {
+    "compound_with": [
+      "Arms_ForearmMass"
+    ],
+    "measurement_relevant": true,
+    "region": "arms",
+    "stored_corners": [
+      "Arms_ForearmMass-ForearmTone_max-max",
+      "Arms_ForearmMass-ForearmTone_max-min",
+      "Arms_ForearmMass-ForearmTone_min-max",
+      "Arms_ForearmMass-ForearmTone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Arms_UpperarmGirth": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "arms",
+    "stored_corners": [
+      "Arms_UpperarmGirth_max",
+      "Arms_UpperarmGirth_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Arms_UpperarmLength": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "arms",
+    "stored_corners": [
+      "Arms_UpperarmLength_max",
+      "Arms_UpperarmLength_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Arms_UpperarmMass": {
+    "compound_with": [
+      "Arms_UpperarmTone"
+    ],
+    "measurement_relevant": true,
+    "region": "arms",
+    "stored_corners": [
+      "Arms_UpperarmMass-UpperarmTone_max-max",
+      "Arms_UpperarmMass-UpperarmTone_max-min",
+      "Arms_UpperarmMass-UpperarmTone_min-max",
+      "Arms_UpperarmMass-UpperarmTone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Arms_UpperarmSize": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "arms",
+    "stored_corners": [
+      "Arms_UpperarmSize_max",
+      "Arms_UpperarmSize_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Arms_UpperarmTone": {
+    "compound_with": [
+      "Arms_UpperarmMass"
+    ],
+    "measurement_relevant": true,
+    "region": "arms",
+    "stored_corners": [
+      "Arms_UpperarmMass-UpperarmTone_max-max",
+      "Arms_UpperarmMass-UpperarmTone_max-min",
+      "Arms_UpperarmMass-UpperarmTone_min-max",
+      "Arms_UpperarmMass-UpperarmTone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Body_Size": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "body global",
+    "stored_corners": [
+      "Body_Size_max",
+      "Body_Size_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Cheeks_CreaseExt": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/cheeks",
+    "stored_corners": [
+      "Cheeks_CreaseExt_max",
+      "Cheeks_CreaseExt_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Cheeks_InfraVolume": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/cheeks",
+    "stored_corners": [
+      "Cheeks_InfraVolume_max",
+      "Cheeks_InfraVolume_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Cheeks_Mass": {
+    "compound_with": [
+      "Cheeks_Tone"
+    ],
+    "measurement_relevant": false,
+    "region": "face/cheeks",
+    "stored_corners": [
+      "Cheeks_Mass-Tone_max-max",
+      "Cheeks_Mass-Tone_max-min",
+      "Cheeks_Mass-Tone_min-max",
+      "Cheeks_Mass-Tone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Cheeks_SideCrease": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/cheeks",
+    "stored_corners": [
+      "Cheeks_SideCrease_max",
+      "Cheeks_SideCrease_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Cheeks_Tone": {
+    "compound_with": [
+      "Cheeks_Mass"
+    ],
+    "measurement_relevant": false,
+    "region": "face/cheeks",
+    "stored_corners": [
+      "Cheeks_Mass-Tone_max-max",
+      "Cheeks_Mass-Tone_max-min",
+      "Cheeks_Mass-Tone_min-max",
+      "Cheeks_Mass-Tone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Cheeks_Zygom": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/cheeks",
+    "stored_corners": [
+      "Cheeks_Zygom_max",
+      "Cheeks_Zygom_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Cheeks_ZygomPosZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/cheeks",
+    "stored_corners": [
+      "Cheeks_ZygomPosZ_max",
+      "Cheeks_ZygomPosZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Chest_Girth": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Chest_Girth_max",
+      "Chest_Girth_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Chest_SizeX": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Chest_SizeX_max",
+      "Chest_SizeX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Chest_SizeY": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Chest_SizeY_max",
+      "Chest_SizeY_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Chest_SizeZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Chest_SizeZ_max",
+      "Chest_SizeZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Chin_Cleft": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/chin",
+    "stored_corners": [
+      "Chin_Cleft_max",
+      "Chin_Cleft_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Chin_Prominence": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/chin",
+    "stored_corners": [
+      "Chin_Prominence_max",
+      "Chin_Prominence_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Chin_SizeX": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/chin",
+    "stored_corners": [
+      "Chin_SizeX_max",
+      "Chin_SizeX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Chin_SizeZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/chin",
+    "stored_corners": [
+      "Chin_SizeZ_max",
+      "Chin_SizeZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Chin_Tone": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/chin",
+    "stored_corners": [
+      "Chin_Tone_max",
+      "Chin_Tone_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Ears_Lobe": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/ears",
+    "stored_corners": [
+      "Ears_Lobe_max",
+      "Ears_Lobe_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Ears_LocY": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/ears",
+    "stored_corners": [
+      "Ears_LocY_max",
+      "Ears_LocY_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Ears_LocZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/ears",
+    "stored_corners": [
+      "Ears_LocZ_max",
+      "Ears_LocZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Ears_RotX": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/ears",
+    "stored_corners": [
+      "Ears_RotX_max",
+      "Ears_RotX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Ears_Round": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/ears",
+    "stored_corners": [
+      "Ears_Round_max",
+      "Ears_Round_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Ears_SizeX": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/ears",
+    "stored_corners": [
+      "Ears_SizeX_max",
+      "Ears_SizeX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Ears_SizeY": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/ears",
+    "stored_corners": [
+      "Ears_SizeY_max",
+      "Ears_SizeY_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Ears_SizeZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/ears",
+    "stored_corners": [
+      "Ears_SizeZ_max",
+      "Ears_SizeZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Elbows_Size": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "arms",
+    "stored_corners": [
+      "Elbows_Size_max",
+      "Elbows_Size_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyebrows_Angle": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Eyebrows_Angle_max",
+      "Eyebrows_Angle_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyebrows_Droop": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Eyebrows_Droop_max",
+      "Eyebrows_Droop_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyebrows_PosZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Eyebrows_PosZ_max",
+      "Eyebrows_PosZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyebrows_Ridge": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Eyebrows_Ridge_max",
+      "Eyebrows_Ridge_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyebrows_SizeY": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Eyebrows_SizeY_max",
+      "Eyebrows_SizeY_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyebrows_Tone": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Eyebrows_Tone_max",
+      "Eyebrows_Tone_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyelids_Angle": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Eyelids_Angle_max",
+      "Eyelids_Angle_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyelids_Crease": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Eyelids_Crease_max",
+      "Eyelids_Crease_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyelids_InnerPosZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Eyelids_InnerPosZ_max",
+      "Eyelids_InnerPosZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyelids_LowerCurve": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Eyelids_LowerCurve_max",
+      "Eyelids_LowerCurve_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyelids_MiddlePosZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Eyelids_MiddlePosZ_max",
+      "Eyelids_MiddlePosZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyelids_OuterPosZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Eyelids_OuterPosZ_max",
+      "Eyelids_OuterPosZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyelids_SizeZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Eyelids_SizeZ_max",
+      "Eyelids_SizeZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyes_BagProminence": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/eyes",
+    "stored_corners": [
+      "Eyes_BagProminence_max",
+      "Eyes_BagProminence_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyes_BagSize": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/eyes",
+    "stored_corners": [
+      "Eyes_BagSize_max",
+      "Eyes_BagSize_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyes_Crosscalibration": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/eyes",
+    "stored_corners": [
+      "Eyes_Crosscalibration_max",
+      "Eyes_Crosscalibration_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyes_InnerPosX": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/eyes",
+    "stored_corners": [
+      "Eyes_InnerPosX_max",
+      "Eyes_InnerPosX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyes_InnerPosZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/eyes",
+    "stored_corners": [
+      "Eyes_InnerPosZ_max",
+      "Eyes_InnerPosZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyes_IrisSize": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/eyes",
+    "stored_corners": [
+      "Eyes_IrisSize_max",
+      "Eyes_IrisSize_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyes_OuterPosX": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/eyes",
+    "stored_corners": [
+      "Eyes_OuterPosX_max",
+      "Eyes_OuterPosX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyes_OuterPosZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/eyes",
+    "stored_corners": [
+      "Eyes_OuterPosZ_max",
+      "Eyes_OuterPosZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyes_PosX": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/eyes",
+    "stored_corners": [
+      "Eyes_PosX_max",
+      "Eyes_PosX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyes_PosZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/eyes",
+    "stored_corners": [
+      "Eyes_PosZ_max",
+      "Eyes_PosZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyes_Size": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/eyes",
+    "stored_corners": [
+      "Eyes_Size_max",
+      "Eyes_Size_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyes_SizeZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/eyes",
+    "stored_corners": [
+      "Eyes_SizeZ_max",
+      "Eyes_SizeZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyes_TypeAlmond": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/eyes",
+    "stored_corners": [
+      "Eyes_TypeAlmond_max",
+      "Eyes_TypeAlmond_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyes_TypeHooded": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/eyes",
+    "stored_corners": [
+      "Eyes_TypeHooded_max",
+      "Eyes_TypeHooded_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Eyes_innerSinus": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/eyes",
+    "stored_corners": [
+      "Eyes_innerSinus_max",
+      "Eyes_innerSinus_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Face_Ellipsoid": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/other",
+    "stored_corners": [
+      "Face_Ellipsoid_max",
+      "Face_Ellipsoid_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Face_Parallelepiped": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/other",
+    "stored_corners": [
+      "Face_Parallelepiped_max",
+      "Face_Parallelepiped_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Face_Triangle": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/other",
+    "stored_corners": [
+      "Face_Triangle_max",
+      "Face_Triangle_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Fantasy_EarsNone": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Fantasy_EarsNone_max"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Fantasy_EarsPointRotation": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Fantasy_EarsPointRotation_max",
+      "Fantasy_EarsPointRotation_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Fantasy_EarsPointed": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Fantasy_EarsPointed_max",
+      "Fantasy_EarsPointed_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Fantasy_EarsPointedDown": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Fantasy_EarsPointedDown_max"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Fantasy_EarsPointedUp": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Fantasy_EarsPointedUp_max"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Fantasy_PupilCat": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Fantasy_PupilCat_max",
+      "Fantasy_PupilCat_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Fantasy_TeethOrc": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Fantasy_TeethOrc_max"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Fantasy_TeethVampire": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "other",
+    "stored_corners": [
+      "Fantasy_TeethVampire_max",
+      "Fantasy_TeethVampire_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Feet_HeelWidth": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "feet",
+    "stored_corners": [
+      "Feet_HeelWidth_max",
+      "Feet_HeelWidth_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Feet_Mass": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "feet",
+    "stored_corners": [
+      "Feet_Mass_max",
+      "Feet_Mass_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Feet_Size": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "feet",
+    "stored_corners": [
+      "Feet_Size_max",
+      "Feet_Size_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Feet_SizeX": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "feet",
+    "stored_corners": [
+      "Feet_SizeX_max",
+      "Feet_SizeX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Feet_SizeY": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "feet",
+    "stored_corners": [
+      "Feet_SizeY_max",
+      "Feet_SizeY_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Feet_SizeZ": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "feet",
+    "stored_corners": [
+      "Feet_SizeZ_max",
+      "Feet_SizeZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Forehead_Angle": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/forehead",
+    "stored_corners": [
+      "Forehead_Angle_max",
+      "Forehead_Angle_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Forehead_Curve": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/forehead",
+    "stored_corners": [
+      "Forehead_Curve_max",
+      "Forehead_Curve_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Forehead_SizeX": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/forehead",
+    "stored_corners": [
+      "Forehead_SizeX_max",
+      "Forehead_SizeX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Forehead_SizeZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/forehead",
+    "stored_corners": [
+      "Forehead_SizeZ_max",
+      "Forehead_SizeZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Forehead_Temple": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/forehead",
+    "stored_corners": [
+      "Forehead_Temple_max",
+      "Forehead_Temple_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Hands_FingersDiam": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "hands",
+    "stored_corners": [
+      "Hands_FingersDiam_max",
+      "Hands_FingersDiam_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Hands_FingersInterDist": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "hands",
+    "stored_corners": [
+      "Hands_FingersInterDist_max",
+      "Hands_FingersInterDist_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Hands_FingersLength": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "hands",
+    "stored_corners": [
+      "Hands_FingersLength_max",
+      "Hands_FingersLength_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Hands_FingersTipSize": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "hands",
+    "stored_corners": [
+      "Hands_FingersTipSize_max",
+      "Hands_FingersTipSize_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Hands_Length": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "hands",
+    "stored_corners": [
+      "Hands_Length_max",
+      "Hands_Length_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Hands_Mass": {
+    "compound_with": [
+      "Hands_Tone"
+    ],
+    "measurement_relevant": true,
+    "region": "hands",
+    "stored_corners": [
+      "Hands_Mass-Tone_max-max",
+      "Hands_Mass-Tone_max-min",
+      "Hands_Mass-Tone_min-max",
+      "Hands_Mass-Tone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Hands_NailsLength": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "hands",
+    "stored_corners": [
+      "Hands_NailsLength_max",
+      "Hands_NailsLength_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Hands_PalmLength": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "hands",
+    "stored_corners": [
+      "Hands_PalmLength_max",
+      "Hands_PalmLength_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Hands_Size": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "hands",
+    "stored_corners": [
+      "Hands_Size_max",
+      "Hands_Size_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Hands_Tone": {
+    "compound_with": [
+      "Hands_Mass"
+    ],
+    "measurement_relevant": true,
+    "region": "hands",
+    "stored_corners": [
+      "Hands_Mass-Tone_max-max",
+      "Hands_Mass-Tone_max-min",
+      "Hands_Mass-Tone_min-max",
+      "Hands_Mass-Tone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Head_CraniumDolichocephalic": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "head",
+    "stored_corners": [
+      "Head_CraniumDolichocephalic_max",
+      "Head_CraniumDolichocephalic_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Head_CraniumPentagonoides": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "head",
+    "stored_corners": [
+      "Head_CraniumPentagonoides_max",
+      "Head_CraniumPentagonoides_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Head_CraniumPlatycephalus": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "head",
+    "stored_corners": [
+      "Head_CraniumPlatycephalus_max",
+      "Head_CraniumPlatycephalus_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Head_Flat": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "head",
+    "stored_corners": [
+      "Head_Flat_max",
+      "Head_Flat_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Head_Nucha": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "head",
+    "stored_corners": [
+      "Head_Nucha_max",
+      "Head_Nucha_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Head_Size": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "head",
+    "stored_corners": [
+      "Head_Size_max",
+      "Head_Size_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Head_SizeX": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "head",
+    "stored_corners": [
+      "Head_SizeX_max",
+      "Head_SizeX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Head_SizeY": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "head",
+    "stored_corners": [
+      "Head_SizeY_max",
+      "Head_SizeY_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Head_SizeZ": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "head",
+    "stored_corners": [
+      "Head_SizeZ_max",
+      "Head_SizeZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Jaw_Angle": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/chin",
+    "stored_corners": [
+      "Jaw_Angle_max",
+      "Jaw_Angle_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Jaw_Angle2": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/chin",
+    "stored_corners": [
+      "Jaw_Angle2_max",
+      "Jaw_Angle2_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Jaw_LocY": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/chin",
+    "stored_corners": [
+      "Jaw_LocY_max",
+      "Jaw_LocY_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Jaw_Prominence": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/chin",
+    "stored_corners": [
+      "Jaw_Prominence_max",
+      "Jaw_Prominence_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Jaw_ScaleX": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/chin",
+    "stored_corners": [
+      "Jaw_ScaleX_max",
+      "Jaw_ScaleX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Legs_AnkleSize": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "legs",
+    "stored_corners": [
+      "Legs_AnkleSize_max",
+      "Legs_AnkleSize_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Legs_Bow": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "legs",
+    "stored_corners": [
+      "Legs_Bow_max",
+      "Legs_Bow_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Legs_CalfGirth": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "legs",
+    "stored_corners": [
+      "Legs_CalfGirth_max",
+      "Legs_CalfGirth_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Legs_KneeProminence": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "legs",
+    "stored_corners": [
+      "Legs_KneeProminence_max",
+      "Legs_KneeProminence_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Legs_KneeSize": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "legs",
+    "stored_corners": [
+      "Legs_KneeSize_max",
+      "Legs_KneeSize_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Legs_LowerThighGirth": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "legs",
+    "stored_corners": [
+      "Legs_LowerThighGirth_max",
+      "Legs_LowerThighGirth_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Legs_LowerlegLength": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "legs",
+    "stored_corners": [
+      "Legs_LowerlegLength_max",
+      "Legs_LowerlegLength_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Legs_LowerlegSize": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "legs",
+    "stored_corners": [
+      "Legs_LowerlegSize_max",
+      "Legs_LowerlegSize_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Legs_LowerlegsMass": {
+    "compound_with": [
+      "Legs_LowerlegsTone"
+    ],
+    "measurement_relevant": true,
+    "region": "legs",
+    "stored_corners": [
+      "Legs_LowerlegsMass-LowerlegsTone_max-max",
+      "Legs_LowerlegsMass-LowerlegsTone_max-min",
+      "Legs_LowerlegsMass-LowerlegsTone_min-max",
+      "Legs_LowerlegsMass-LowerlegsTone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Legs_LowerlegsTone": {
+    "compound_with": [
+      "Legs_LowerlegsMass"
+    ],
+    "measurement_relevant": true,
+    "region": "legs",
+    "stored_corners": [
+      "Legs_LowerlegsMass-LowerlegsTone_max-max",
+      "Legs_LowerlegsMass-LowerlegsTone_max-min",
+      "Legs_LowerlegsMass-LowerlegsTone_min-max",
+      "Legs_LowerlegsMass-LowerlegsTone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Legs_UpperThighGirth": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "legs",
+    "stored_corners": [
+      "Legs_UpperThighGirth_max",
+      "Legs_UpperThighGirth_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Legs_UpperlegInCurve": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "legs",
+    "stored_corners": [
+      "Legs_UpperlegInCurve_max",
+      "Legs_UpperlegInCurve_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Legs_UpperlegLength": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "legs",
+    "stored_corners": [
+      "Legs_UpperlegLength_max",
+      "Legs_UpperlegLength_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Legs_UpperlegSize": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "legs",
+    "stored_corners": [
+      "Legs_UpperlegSize_max",
+      "Legs_UpperlegSize_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Legs_UpperlegsMass": {
+    "compound_with": [
+      "Legs_UpperlegsTone"
+    ],
+    "measurement_relevant": true,
+    "region": "legs",
+    "stored_corners": [
+      "Legs_UpperlegsMass-UpperlegsTone_max-max",
+      "Legs_UpperlegsMass-UpperlegsTone_max-min",
+      "Legs_UpperlegsMass-UpperlegsTone_min-max",
+      "Legs_UpperlegsMass-UpperlegsTone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Legs_UpperlegsTone": {
+    "compound_with": [
+      "Legs_UpperlegsMass"
+    ],
+    "measurement_relevant": true,
+    "region": "legs",
+    "stored_corners": [
+      "Legs_UpperlegsMass-UpperlegsTone_max-max",
+      "Legs_UpperlegsMass-UpperlegsTone_max-min",
+      "Legs_UpperlegsMass-UpperlegsTone_min-max",
+      "Legs_UpperlegsMass-UpperlegsTone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Mouth_CornersPosZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/mouth",
+    "stored_corners": [
+      "Mouth_CornersPosZ_max",
+      "Mouth_CornersPosZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Mouth_LowerlipExt": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/mouth",
+    "stored_corners": [
+      "Mouth_LowerlipExt_max",
+      "Mouth_LowerlipExt_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Mouth_LowerlipSizeZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/mouth",
+    "stored_corners": [
+      "Mouth_LowerlipSizeZ_max",
+      "Mouth_LowerlipSizeZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Mouth_LowerlipVolume": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/mouth",
+    "stored_corners": [
+      "Mouth_LowerlipVolume_max",
+      "Mouth_LowerlipVolume_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Mouth_PhiltrumProminence": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/mouth",
+    "stored_corners": [
+      "Mouth_PhiltrumProminence_max",
+      "Mouth_PhiltrumProminence_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Mouth_PhiltrumSizeX": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/mouth",
+    "stored_corners": [
+      "Mouth_PhiltrumSizeX_max",
+      "Mouth_PhiltrumSizeX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Mouth_PhiltrumSizeY": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/mouth",
+    "stored_corners": [
+      "Mouth_PhiltrumSizeY_max",
+      "Mouth_PhiltrumSizeY_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Mouth_PosY": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/mouth",
+    "stored_corners": [
+      "Mouth_PosY_max",
+      "Mouth_PosY_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Mouth_PosZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/mouth",
+    "stored_corners": [
+      "Mouth_PosZ_max",
+      "Mouth_PosZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Mouth_Protusion": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/mouth",
+    "stored_corners": [
+      "Mouth_Protusion_max",
+      "Mouth_Protusion_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Mouth_SideCrease": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/mouth",
+    "stored_corners": [
+      "Mouth_SideCrease_max",
+      "Mouth_SideCrease_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Mouth_SizeX": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/mouth",
+    "stored_corners": [
+      "Mouth_SizeX_max",
+      "Mouth_SizeX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Mouth_UpperlipExt": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/mouth",
+    "stored_corners": [
+      "Mouth_UpperlipExt_max",
+      "Mouth_UpperlipExt_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Mouth_UpperlipSizeZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/mouth",
+    "stored_corners": [
+      "Mouth_UpperlipSizeZ_max",
+      "Mouth_UpperlipSizeZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Mouth_UpperlipVolume": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/mouth",
+    "stored_corners": [
+      "Mouth_UpperlipVolume_max",
+      "Mouth_UpperlipVolume_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Neck_Angle": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "neck",
+    "stored_corners": [
+      "Neck_Angle_max",
+      "Neck_Angle_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Neck_Back": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "neck",
+    "stored_corners": [
+      "Neck_Back_max",
+      "Neck_Back_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Neck_Collarbone": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "neck",
+    "stored_corners": [
+      "Neck_Collarbone_max",
+      "Neck_Collarbone_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Neck_Length": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "neck",
+    "stored_corners": [
+      "Neck_Length_max",
+      "Neck_Length_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Neck_Mass": {
+    "compound_with": [
+      "Neck_Tone"
+    ],
+    "measurement_relevant": true,
+    "region": "neck",
+    "stored_corners": [
+      "Neck_Mass-Tone_max-max",
+      "Neck_Mass-Tone_max-min",
+      "Neck_Mass-Tone_min-max",
+      "Neck_Mass-Tone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Neck_SideCurve": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "neck",
+    "stored_corners": [
+      "Neck_SideCurve_max",
+      "Neck_SideCurve_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Neck_Size": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "neck",
+    "stored_corners": [
+      "Neck_Size_max",
+      "Neck_Size_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Neck_Tone": {
+    "compound_with": [
+      "Neck_Mass"
+    ],
+    "measurement_relevant": true,
+    "region": "neck",
+    "stored_corners": [
+      "Neck_Mass-Tone_max-max",
+      "Neck_Mass-Tone_max-min",
+      "Neck_Mass-Tone_min-max",
+      "Neck_Mass-Tone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Neck_TrapeziousSize": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "neck",
+    "stored_corners": [
+      "Neck_TrapeziousSize_max",
+      "Neck_TrapeziousSize_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_BallSizeX": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_BallSizeX_max",
+      "Nose_BallSizeX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_BasePosZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_BasePosZ_max",
+      "Nose_BasePosZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_BaseShape": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_BaseShape_max",
+      "Nose_BaseShape_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_BaseSizeX": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_BaseSizeX_max",
+      "Nose_BaseSizeX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_BaseSizeZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_BaseSizeZ_max",
+      "Nose_BaseSizeZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_BridgeSizeX": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_BridgeSizeX_max",
+      "Nose_BridgeSizeX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_Curve": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_Curve_max",
+      "Nose_Curve_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_GlabellaPosZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_GlabellaPosZ_max",
+      "Nose_GlabellaPosZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_GlabellaSizeX": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_GlabellaSizeX_max",
+      "Nose_GlabellaSizeX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_GlabellaSizeY": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_GlabellaSizeY_max",
+      "Nose_GlabellaSizeY_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_NostrilCrease": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_NostrilCrease_max",
+      "Nose_NostrilCrease_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_NostrilDiam": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_NostrilDiam_max",
+      "Nose_NostrilDiam_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_NostrilPosZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_NostrilPosZ_max",
+      "Nose_NostrilPosZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_NostrilSizeX": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_NostrilSizeX_max",
+      "Nose_NostrilSizeX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_NostrilSizeY": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_NostrilSizeY_max",
+      "Nose_NostrilSizeY_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_NostrilSizeZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_NostrilSizeZ_max",
+      "Nose_NostrilSizeZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_PosY": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_PosY_max",
+      "Nose_PosY_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_SeptumFlat": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_SeptumFlat_max",
+      "Nose_SeptumFlat_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_SeptumRolled": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_SeptumRolled_max",
+      "Nose_SeptumRolled_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_SizeY": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_SizeY_max",
+      "Nose_SizeY_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_TipAngle": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_TipAngle_max",
+      "Nose_TipAngle_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_TipPosY": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_TipPosY_max",
+      "Nose_TipPosY_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_TipPosZ": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_TipPosZ_max",
+      "Nose_TipPosZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_TipSize": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_TipSize_max",
+      "Nose_TipSize_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_WingAngle": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_WingAngle_max",
+      "Nose_WingAngle_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_WingBackFlat": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_WingBackFlat_max"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Nose_WingBump": {
+    "compound_with": [],
+    "measurement_relevant": false,
+    "region": "face/nose",
+    "stored_corners": [
+      "Nose_WingBump_max",
+      "Nose_WingBump_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Pelvis_Angle": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "pelvis",
+    "stored_corners": [
+      "Pelvis_Angle_max",
+      "Pelvis_Angle_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Pelvis_CrotchDist": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "pelvis",
+    "stored_corners": [
+      "Pelvis_CrotchDist_max",
+      "Pelvis_CrotchDist_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Pelvis_CrotchVolume": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "pelvis",
+    "stored_corners": [
+      "Pelvis_CrotchVolume_max",
+      "Pelvis_CrotchVolume_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Pelvis_Girth": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "pelvis",
+    "stored_corners": [
+      "Pelvis_Girth_max",
+      "Pelvis_Girth_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Pelvis_GluteusMass": {
+    "compound_with": [
+      "Pelvis_GluteusTone"
+    ],
+    "measurement_relevant": true,
+    "region": "pelvis",
+    "stored_corners": [
+      "Pelvis_GluteusMass-GluteusTone_max-max",
+      "Pelvis_GluteusMass-GluteusTone_max-min",
+      "Pelvis_GluteusMass-GluteusTone_min-max",
+      "Pelvis_GluteusMass-GluteusTone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Pelvis_GluteusSize": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "pelvis",
+    "stored_corners": [
+      "Pelvis_GluteusSize_max",
+      "Pelvis_GluteusSize_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Pelvis_GluteusTone": {
+    "compound_with": [
+      "Pelvis_GluteusMass"
+    ],
+    "measurement_relevant": true,
+    "region": "pelvis",
+    "stored_corners": [
+      "Pelvis_GluteusMass-GluteusTone_max-max",
+      "Pelvis_GluteusMass-GluteusTone_max-min",
+      "Pelvis_GluteusMass-GluteusTone_min-max",
+      "Pelvis_GluteusMass-GluteusTone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Pelvis_Length": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "pelvis",
+    "stored_corners": [
+      "Pelvis_Length_max",
+      "Pelvis_Length_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Pelvis_SizeX": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "pelvis",
+    "stored_corners": [
+      "Pelvis_SizeX_max",
+      "Pelvis_SizeX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Pelvis_SizeY": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "pelvis",
+    "stored_corners": [
+      "Pelvis_SizeY_max",
+      "Pelvis_SizeY_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Shoulders_Length": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "shoulders",
+    "stored_corners": [
+      "Shoulders_Length_max",
+      "Shoulders_Length_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Shoulders_Mass": {
+    "compound_with": [
+      "Shoulders_Tone"
+    ],
+    "measurement_relevant": true,
+    "region": "shoulders",
+    "stored_corners": [
+      "Shoulders_Mass-Tone_max-max",
+      "Shoulders_Mass-Tone_max-min",
+      "Shoulders_Mass-Tone_min-max",
+      "Shoulders_Mass-Tone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Shoulders_PosZ": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "shoulders",
+    "stored_corners": [
+      "Shoulders_PosZ_max",
+      "Shoulders_PosZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Shoulders_Size": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "shoulders",
+    "stored_corners": [
+      "Shoulders_Size_max",
+      "Shoulders_Size_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Shoulders_SizeX": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "shoulders",
+    "stored_corners": [
+      "Shoulders_SizeX_max",
+      "Shoulders_SizeX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Shoulders_SizeX2": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "shoulders",
+    "stored_corners": [
+      "Shoulders_SizeX2_max",
+      "Shoulders_SizeX2_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Shoulders_Tone": {
+    "compound_with": [
+      "Shoulders_Mass"
+    ],
+    "measurement_relevant": true,
+    "region": "shoulders",
+    "stored_corners": [
+      "Shoulders_Mass-Tone_max-max",
+      "Shoulders_Mass-Tone_max-min",
+      "Shoulders_Mass-Tone_min-max",
+      "Shoulders_Mass-Tone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Stomach_LocalFat": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "stomach",
+    "stored_corners": [
+      "Stomach_LocalFat_max",
+      "Stomach_LocalFat_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Stomach_Volume": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "stomach",
+    "stored_corners": [
+      "Stomach_Volume_max",
+      "Stomach_Volume_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Torso_AureolaSize": {
+    "compound_with": [
+      "Torso_BreastMass"
+    ],
+    "measurement_relevant": true,
+    "region": "torso",
+    "stored_corners": [
+      "Torso_BreastMass-AureolaSize_max-max",
+      "Torso_BreastMass-AureolaSize_max-min",
+      "Torso_BreastMass-AureolaSize_min-max",
+      "Torso_BreastMass-AureolaSize_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Torso_BellyPosZ": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "torso",
+    "stored_corners": [
+      "Torso_BellyPosZ_max",
+      "Torso_BellyPosZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Torso_BreastMass": {
+    "compound_with": [
+      "Torso_AureolaSize",
+      "Torso_BreastPosX",
+      "Torso_BreastScaleY",
+      "Torso_BreastTone",
+      "Torso_Mass",
+      "Torso_Tone"
+    ],
+    "measurement_relevant": true,
+    "region": "torso/breast",
+    "stored_corners": [
+      "Torso_BreastMass-AureolaSize_max-max",
+      "Torso_BreastMass-AureolaSize_max-min",
+      "Torso_BreastMass-AureolaSize_min-max",
+      "Torso_BreastMass-AureolaSize_min-min",
+      "Torso_BreastMass-BreastPosX_max-max",
+      "Torso_BreastMass-BreastPosX_max-min",
+      "Torso_BreastMass-BreastPosX_min-max",
+      "Torso_BreastMass-BreastPosX_min-min",
+      "Torso_BreastMass-BreastScaleY_max-max",
+      "Torso_BreastMass-BreastScaleY_max-min",
+      "Torso_BreastMass-BreastScaleY_min-max",
+      "Torso_BreastMass-BreastScaleY_min-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-max-max-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-max-max-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-max-min-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-max-min-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-min-max-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-min-max-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-min-min-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-min-min-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-max-max-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-max-max-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-max-min-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-max-min-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-min-max-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-min-max-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-min-min-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-min-min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Torso_BreastNipple": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "torso/breast",
+    "stored_corners": [
+      "Torso_BreastNipple_max",
+      "Torso_BreastNipple_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Torso_BreastPosX": {
+    "compound_with": [
+      "Torso_BreastMass"
+    ],
+    "measurement_relevant": true,
+    "region": "torso/breast",
+    "stored_corners": [
+      "Torso_BreastMass-BreastPosX_max-max",
+      "Torso_BreastMass-BreastPosX_max-min",
+      "Torso_BreastMass-BreastPosX_min-max",
+      "Torso_BreastMass-BreastPosX_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Torso_BreastPosZ": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "torso/breast",
+    "stored_corners": [
+      "Torso_BreastPosZ_max",
+      "Torso_BreastPosZ_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Torso_BreastScaleY": {
+    "compound_with": [
+      "Torso_BreastMass"
+    ],
+    "measurement_relevant": true,
+    "region": "torso/breast",
+    "stored_corners": [
+      "Torso_BreastMass-BreastScaleY_max-max",
+      "Torso_BreastMass-BreastScaleY_max-min",
+      "Torso_BreastMass-BreastScaleY_min-max",
+      "Torso_BreastMass-BreastScaleY_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Torso_BreastTone": {
+    "compound_with": [
+      "Torso_BreastMass",
+      "Torso_Mass",
+      "Torso_Tone"
+    ],
+    "measurement_relevant": true,
+    "region": "torso/breast",
+    "stored_corners": [
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-max-max-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-max-max-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-max-min-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-max-min-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-min-max-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-min-max-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-min-min-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-min-min-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-max-max-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-max-max-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-max-min-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-max-min-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-min-max-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-min-max-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-min-min-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-min-min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Torso_Dorsi": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "torso",
+    "stored_corners": [
+      "Torso_Dorsi_max",
+      "Torso_Dorsi_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Torso_Length": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "torso",
+    "stored_corners": [
+      "Torso_Length_max",
+      "Torso_Length_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Torso_Mass": {
+    "compound_with": [
+      "Torso_BreastMass",
+      "Torso_BreastTone",
+      "Torso_Tone"
+    ],
+    "measurement_relevant": true,
+    "region": "torso",
+    "stored_corners": [
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-max-max-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-max-max-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-max-min-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-max-min-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-min-max-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-min-max-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-min-min-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-min-min-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-max-max-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-max-max-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-max-min-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-max-min-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-min-max-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-min-max-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-min-min-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-min-min-min",
+      "Torso_Mass-Tone_max-max",
+      "Torso_Mass-Tone_max-min",
+      "Torso_Mass-Tone_min-max",
+      "Torso_Mass-Tone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Torso_SizeX": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "torso",
+    "stored_corners": [
+      "Torso_SizeX_max",
+      "Torso_SizeX_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Torso_SizeY": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "torso",
+    "stored_corners": [
+      "Torso_SizeY_max",
+      "Torso_SizeY_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Torso_Tone": {
+    "compound_with": [
+      "Torso_BreastMass",
+      "Torso_BreastTone",
+      "Torso_Mass"
+    ],
+    "measurement_relevant": true,
+    "region": "torso",
+    "stored_corners": [
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-max-max-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-max-max-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-max-min-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-max-min-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-min-max-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-min-max-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-min-min-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_max-min-min-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-max-max-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-max-max-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-max-min-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-max-min-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-min-max-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-min-max-min",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-min-min-max",
+      "Torso_BreastMass-BreastTone-Mass-Tone_min-min-min-min",
+      "Torso_Mass-Tone_max-max",
+      "Torso_Mass-Tone_max-min",
+      "Torso_Mass-Tone_min-max",
+      "Torso_Mass-Tone_min-min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Torso_ToracicCurve": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "torso",
+    "stored_corners": [
+      "Torso_ToracicCurve_max",
+      "Torso_ToracicCurve_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Torso_Vshape": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "torso",
+    "stored_corners": [
+      "Torso_Vshape_max",
+      "Torso_Vshape_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Waist_Size": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "waist",
+    "stored_corners": [
+      "Waist_Size_max",
+      "Waist_Size_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "Wrists_Size": {
+    "compound_with": [],
+    "measurement_relevant": true,
+    "region": "arms",
+    "stored_corners": [
+      "Wrists_Size_max",
+      "Wrists_Size_min"
+    ],
+    "value_range": [
+      0.0,
+      1.0
+    ]
+  }
+}

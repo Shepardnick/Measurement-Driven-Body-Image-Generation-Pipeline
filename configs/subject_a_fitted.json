@@ -1,0 +1,31 @@
+{
+  "name": "subject_a_fitted",
+  "source": "charmorph",
+  "charmorph": {
+    "character": "mb_female",
+    "ethnicity_l1": "Caucasian",
+    "preset": "type_ideal_shapely",
+    "morph_values": {
+      "Torso_BreastTone": 0.85,
+      "Pelvis_GluteusTone": 0.85,
+      "Abdomen_Tone": 0.85,
+      "Legs_UpperlegsTone": 0.7,
+      "Arms_UpperarmTone": 0.6
+    },
+    "fit_to_measurements": true,
+    "measurements_path": "target_measurements.json",
+    "optimize_morphs": ["body"],
+    "fitter": {
+      "iterations": 400,
+      "lr": 0.04,
+      "regularization": 0.015
+    }
+  },
+  "stature_scale": 193.04,
+  "measurements_path": "target_measurements.json",
+  "render": {
+    "resolution": 1024,
+    "angles_deg": [0, 45, 90, 135, 180, 225, 270, 315],
+    "skin_rgb": [0.82, 0.66, 0.55]
+  }
+}

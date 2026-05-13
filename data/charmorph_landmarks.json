@@ -1,0 +1,61 @@
+{
+  "default_height_m": 1.6783000230789185,
+  "head_top_idx": 7852,
+  "foot_indices": [
+    4389,
+    9286
+  ],
+  "left_shoulder_idx": 2848,
+  "right_shoulder_idx": 7754,
+  "left_hip_idx": 5931,
+  "right_hip_idx": 10828,
+  "bust_ring": [
+    7674,
+    7658,
+    7671,
+    8035,
+    7733,
+    8036,
+    3148,
+    2805,
+    3147,
+    1789,
+    1776,
+    1792,
+    1751,
+    1801,
+    7683,
+    7633
+  ],
+  "waist_ring": [
+    11140,
+    6232,
+    6234,
+    6253,
+    6259,
+    6290,
+    11214,
+    11169,
+    11163,
+    11142
+  ],
+  "hip_ring": [
+    5927,
+    5923,
+    10820,
+    10824,
+    10822,
+    10827,
+    10825,
+    10826,
+    10829,
+    10862,
+    5965,
+    5932,
+    5929,
+    5928,
+    5930,
+    5925
+  ],
+  "coord_convention": "applied to vertices after Z-up\u2192Y-up swap (x_world, y_world=z_blender, z_world=-y_blender)"
+}
