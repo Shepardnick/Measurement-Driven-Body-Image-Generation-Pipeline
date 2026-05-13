@@ -51,10 +51,11 @@ def render_views(
     extent = (maxs - mins).max() * 0.55
     bbox = [(center[i] - extent, center[i] + extent) for i in range(3)]
 
-    # matplotlib's azim=0 looks down +X, but we want azim=0 to be the front
-    # view (looking down +Z toward -Z). Add 90° so the user-visible angles
-    # match subject-frame conventions (0=front, 90=subject's right, etc.).
-    AZIM_OFFSET_DEG = 90.0
+    # Subject convention: 0°=front, 90°=subject's right, 180°=back, 270°=left.
+    # SMPL-X canonical: face points +Z, so the front camera lives at +Z.
+    # In matplotlib mplot3d our plot_Y = -world_Z, so +Z in world is at
+    # -plot_Y, i.e. matplotlib azim = -90. Offset is -90.
+    AZIM_OFFSET_DEG = -90.0
 
     written: list[Path] = []
     for deg in angles_deg:
