@@ -62,7 +62,171 @@
       "inseam_cm"
     ],
     "import_ok": true,
-    "from_verts_ok": null,
-    "from_verts_note": "SMPLX_MODEL_DIR not set; cannot instantiate MeasureSMPLX without SMPL-X .pkl weights. Adapter API verified at import level only."
+    "from_verts_ok": true,
+    "default_shape_measurements_cm": {
+      "stature_cm": 163.9204559326172,
+      "bust_cm": 98.83638241661397,
+      "waist_cm": 83.44701806632206,
+      "hip_cm": 104.53546040504432,
+      "head_circ_cm": 56.569182126672516,
+      "neck_circ_cm": 33.28971572818491,
+      "upper_arm_circ_cm": 29.336403525808034,
+      "forearm_circ_cm": 24.597907417878346,
+      "thigh_circ_cm": 51.89613805192103,
+      "calf_circ_cm": 36.0164504599738,
+      "shoulder_breadth_cm": 30.435026168823242,
+      "arm_length_cm": 51.27216720581055,
+      "inseam_cm": 72.76800537109375
+    }
+  },
+  "end_to_end": {
+    "nn_raw": {
+      "beta_range": [
+        -14.607851028442383,
+        14.46120834350586
+      ],
+      "measured_cm": {
+        "stature_cm": 184.0,
+        "bust_cm": 100.05,
+        "waist_cm": 76.56,
+        "hip_cm": 118.12,
+        "head_circ_cm": 56.49,
+        "neck_circ_cm": 33.93,
+        "upper_arm_circ_cm": 32.98,
+        "forearm_circ_cm": 27.15,
+        "thigh_circ_cm": 63.04,
+        "calf_circ_cm": 41.97,
+        "shoulder_breadth_cm": 41.04,
+        "arm_length_cm": 62.46,
+        "inseam_cm": 81.64
+      },
+      "residuals_cm": {
+        "stature_cm": -9.04,
+        "bust_cm": -7.15,
+        "waist_cm": 4.46,
+        "hip_cm": -20.58,
+        "head_circ_cm": -0.71,
+        "neck_circ_cm": -1.67,
+        "upper_arm_circ_cm": 2.48,
+        "forearm_circ_cm": 0.45,
+        "thigh_circ_cm": -2.96,
+        "calf_circ_cm": -1.23,
+        "shoulder_breadth_cm": -10.16,
+        "arm_length_cm": -3.54,
+        "inseam_cm": -8.56
+      },
+      "max_abs_residual_cm": 20.58
+    },
+    "nn_clipped\u00b15": {
+      "beta_range": [
+        -5.0,
+        5.0
+      ],
+      "measured_cm": {
+        "stature_cm": 186.59,
+        "bust_cm": 110.18,
+        "waist_cm": 91.38,
+        "hip_cm": 127.67,
+        "head_circ_cm": 62.41,
+        "neck_circ_cm": 35.1,
+        "upper_arm_circ_cm": 35.77,
+        "forearm_circ_cm": 28.87,
+        "thigh_circ_cm": 68.11,
+        "calf_circ_cm": 44.2,
+        "shoulder_breadth_cm": 37.63,
+        "arm_length_cm": 62.7,
+        "inseam_cm": 87.07
+      },
+      "residuals_cm": {
+        "stature_cm": -6.45,
+        "bust_cm": 2.98,
+        "waist_cm": 19.28,
+        "hip_cm": -11.03,
+        "head_circ_cm": 5.21,
+        "neck_circ_cm": -0.5,
+        "upper_arm_circ_cm": 5.27,
+        "forearm_circ_cm": 2.17,
+        "thigh_circ_cm": 2.11,
+        "calf_circ_cm": 1.0,
+        "shoulder_breadth_cm": -13.57,
+        "arm_length_cm": -3.3,
+        "inseam_cm": -3.13
+      },
+      "max_abs_residual_cm": 19.28
+    },
+    "svr_raw": {
+      "beta_range": [
+        -18.33811299965383,
+        17.143576693457707
+      ],
+      "measured_cm": {
+        "stature_cm": 193.83,
+        "bust_cm": 93.27,
+        "waist_cm": 88.59,
+        "hip_cm": 116.19,
+        "head_circ_cm": 79.59,
+        "neck_circ_cm": 40.9,
+        "upper_arm_circ_cm": 33.73,
+        "forearm_circ_cm": 29.78,
+        "thigh_circ_cm": 66.4,
+        "calf_circ_cm": 44.85,
+        "shoulder_breadth_cm": 46.99,
+        "arm_length_cm": 64.6,
+        "inseam_cm": 80.51
+      },
+      "residuals_cm": {
+        "stature_cm": 0.79,
+        "bust_cm": -13.93,
+        "waist_cm": 16.49,
+        "hip_cm": -22.51,
+        "head_circ_cm": 22.39,
+        "neck_circ_cm": 5.3,
+        "upper_arm_circ_cm": 3.23,
+        "forearm_circ_cm": 3.08,
+        "thigh_circ_cm": 0.4,
+        "calf_circ_cm": 1.65,
+        "shoulder_breadth_cm": -4.21,
+        "arm_length_cm": -1.4,
+        "inseam_cm": -9.69
+      },
+      "max_abs_residual_cm": 22.51
+    },
+    "svr_clipped\u00b15": {
+      "beta_range": [
+        -5.0,
+        5.0
+      ],
+      "measured_cm": {
+        "stature_cm": 193.31,
+        "bust_cm": 113.93,
+        "waist_cm": 83.99,
+        "hip_cm": 123.52,
+        "head_circ_cm": 64.14,
+        "neck_circ_cm": 35.45,
+        "upper_arm_circ_cm": 31.7,
+        "forearm_circ_cm": 27.53,
+        "thigh_circ_cm": 64.45,
+        "calf_circ_cm": 43.29,
+        "shoulder_breadth_cm": 39.34,
+        "arm_length_cm": 65.58,
+        "inseam_cm": 89.6
+      },
+      "residuals_cm": {
+        "stature_cm": 0.27,
+        "bust_cm": 6.73,
+        "waist_cm": 11.89,
+        "hip_cm": -15.18,
+        "head_circ_cm": 6.94,
+        "neck_circ_cm": -0.15,
+        "upper_arm_circ_cm": 1.2,
+        "forearm_circ_cm": 0.83,
+        "thigh_circ_cm": -1.55,
+        "calf_circ_cm": 0.09,
+        "shoulder_breadth_cm": -11.86,
+        "arm_length_cm": -0.42,
+        "inseam_cm": -0.6
+      },
+      "max_abs_residual_cm": 15.18
+    }
   }
 }

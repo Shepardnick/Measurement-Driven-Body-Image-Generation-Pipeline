@@ -17,6 +17,7 @@ A differentiable measurement layer is deferred to a later pass.
 
 from __future__ import annotations
 
+import contextlib
 import os
 import shutil
 import sys
@@ -96,6 +97,16 @@ def _ensure_smplx_weights(model_dir: str | Path | None) -> Path:
     return model_dir
 
 
+@contextlib.contextmanager
+def _cwd(path: Path):
+    old = os.getcwd()
+    try:
+        os.chdir(path)
+        yield
+    finally:
+        os.chdir(old)
+
+
 def measure_mesh(
     vertices: np.ndarray,
     gender: str = "female",
@@ -121,9 +132,6 @@ def measure_mesh(
         )
     verts_t = torch.from_numpy(verts)
 
-    measurer = MeasureBody("smplx")
-    measurer.from_verts(verts=verts_t)
-
     if names is None:
         upstream_names = list(UPSTREAM_NAME_MAP.values())
         upstream_to_canonical = {v: k for k, v in UPSTREAM_NAME_MAP.items()}
@@ -131,8 +139,14 @@ def measure_mesh(
         upstream_names = list(names)
         upstream_to_canonical = {n: n for n in upstream_names}
 
-    measurer.measure(upstream_names)
-    raw = measurer.measurements
+    # Upstream code uses relative paths like "data/smplx"; chdir into the
+    # repo so they resolve. Also: MeasureBody.__init__ does the model load,
+    # so the chdir has to cover construction *and* measurement calls.
+    with _cwd(ANTHROPOMETRY_ROOT):
+        measurer = MeasureBody("smplx")
+        measurer.from_verts(verts=verts_t)
+        measurer.measure(upstream_names)
+        raw = dict(measurer.measurements)
 
     out: dict[str, float] = {}
     for upstream_name in upstream_names:

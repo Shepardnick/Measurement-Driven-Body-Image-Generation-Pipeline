@@ -93,15 +93,86 @@ def smoke_anthropometry() -> dict:
     from src.anthropometry_adapter import measure_mesh
 
     try:
-        verts = np.random.RandomState(0).randn(10475, 3).astype(np.float32) * 0.05
+        # Use the SMPL-X default-shape female (beta=0) as a realistic test mesh
+        import torch
+        import smplx
+        model = smplx.create(
+            os.path.dirname(smplx_dir),
+            model_type="smplx",
+            gender="female",
+            num_betas=10,
+            use_pca=False,
+            flat_hand_mean=True,
+            ext="npz",
+        )
+        out_model = model(betas=torch.zeros(1, 10), return_verts=True)
+        verts = out_model.vertices[0].detach().cpu().numpy()
         result = measure_mesh(verts, gender="female")
         out["from_verts_ok"] = True
-        out["sample_measurements_cm"] = {k: float(v) for k, v in result.items()}
-        print(f"  measure_mesh ran on random verts, {len(result)} measurements returned")
+        out["default_shape_measurements_cm"] = {k: float(v) for k, v in result.items()}
+        print(f"  measure_mesh on SMPL-X default-shape female: {len(result)} measurements")
+        for k, v in result.items():
+            print(f"    {k}: {v:.2f}")
     except Exception as e:
         out["from_verts_ok"] = False
         out["from_verts_error"] = f"{type(e).__name__}: {e}"
         print(f"  measure_mesh failed: {e}")
+    return out
+
+
+def smoke_end_to_end(measurements: dict) -> dict:
+    """Full chain: measurements -> A2B β -> SMPL-X mesh -> measurements."""
+    print("=== End-to-end: target measurements -> A2B -> SMPL-X -> measurements ===")
+    out = {}
+    smplx_dir = os.environ.get("SMPLX_MODEL_DIR")
+    if not smplx_dir:
+        out["skipped"] = "SMPLX_MODEL_DIR not set"
+        print("  SMPLX_MODEL_DIR not set; skipping")
+        return out
+
+    try:
+        import torch
+        import smplx
+        from src.a2b_adapter import predict_betas
+        from src.anthropometry_adapter import measure_mesh
+
+        for model_type in ("nn", "svr"):
+            betas = predict_betas(measurements, model_type=model_type)
+            betas_clipped = np.clip(betas, -5.0, 5.0)
+            for label, b in (("raw", betas), ("clipped±5", betas_clipped)):
+                model = smplx.create(
+                    os.path.dirname(smplx_dir),
+                    model_type="smplx",
+                    gender="female",
+                    num_betas=10,
+                    use_pca=False,
+                    flat_hand_mean=True,
+                    ext="npz",
+                )
+                betas_t = torch.from_numpy(b.astype(np.float32)).unsqueeze(0)
+                out_model = model(betas=betas_t, return_verts=True)
+                verts = out_model.vertices[0].detach().cpu().numpy()
+                measured = measure_mesh(verts, gender="female")
+                tag = f"{model_type}_{label}"
+                residuals = {
+                    k: round(measured[k] - measurements[k], 2)
+                    for k in measured
+                    if k in measurements
+                }
+                max_res = max(abs(v) for v in residuals.values())
+                out[tag] = {
+                    "beta_range": [float(b.min()), float(b.max())],
+                    "measured_cm": {k: round(v, 2) for k, v in measured.items()},
+                    "residuals_cm": residuals,
+                    "max_abs_residual_cm": round(max_res, 2),
+                }
+                print(f"  {tag}: β∈[{b.min():+.2f},{b.max():+.2f}], "
+                      f"max |residual| = {max_res:.2f} cm")
+    except Exception as e:
+        import traceback
+        out["error"] = f"{type(e).__name__}: {e}"
+        out["traceback"] = traceback.format_exc()
+        print(f"  end-to-end failed: {e}")
     return out
 
 
@@ -116,6 +187,7 @@ def main() -> None:
         },
         "a2b": smoke_a2b(measurements),
         "anthropometry": smoke_anthropometry(),
+        "end_to_end": smoke_end_to_end(measurements),
     }
 
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
