@@ -1,0 +1,89 @@
+{
+  "name": "subject_a",
+  "config_path": "configs/subject_a.json",
+  "identity_coeffs": [
+    -1.4780168533325195,
+    4.107324600219727,
+    2.0984349250793457,
+    3.518181800842285,
+    1.1893155574798584,
+    -2.8053345680236816,
+    3.9249227046966553,
+    -0.03341313451528549,
+    -0.46565330028533936,
+    3.737050771713257,
+    3.5423595905303955,
+    3.687251091003418,
+    3.7858450412750244,
+    -2.2167577743530273,
+    -3.715363025665283,
+    3.576087713241577,
+    3.56775164604187,
+    3.6172666549682617,
+    3.589020252227783,
+    -3.6868326663970947,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "verification_cm": {
+    "stature_cm": {
+      "actual": 192.86,
+      "target": 193.04,
+      "residual": -0.18
+    },
+    "shoulder_breadth_cm": {
+      "actual": 44.86,
+      "target": 38.23,
+      "residual": 6.63
+    },
+    "bust_cm": {
+      "actual": 103.59,
+      "target": 104.03,
+      "residual": -0.44
+    },
+    "waist_cm": {
+      "actual": 73.52,
+      "target": 73.58,
+      "residual": -0.06
+    },
+    "hip_cm": {
+      "actual": 117.67,
+      "target": 117.87,
+      "residual": -0.2
+    }
+  },
+  "render_paths": [
+    "outputs/subject_a/renders/view_000.png",
+    "outputs/subject_a/renders/view_045.png",
+    "outputs/subject_a/renders/view_090.png",
+    "outputs/subject_a/renders/view_135.png",
+    "outputs/subject_a/renders/view_180.png",
+    "outputs/subject_a/renders/view_225.png",
+    "outputs/subject_a/renders/view_270.png",
+    "outputs/subject_a/renders/view_315.png"
+  ],
+  "mesh_path": "outputs/subject_a/mesh.obj"
+}

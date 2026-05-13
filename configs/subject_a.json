@@ -1,0 +1,24 @@
+{
+  "name": "subject_a",
+  "source": "measurements",
+  "obj_path": null,
+  "measurements_path": "target_measurements.json",
+  "fitter": {
+    "iterations": 300,
+    "lr": 0.1,
+    "regularization": 0.005,
+    "clip_magnitude": 3.5,
+    "body_components_only": true
+  },
+  "stature_scale": "auto",
+  "identity_adjustment": {
+    "comment": "Per-component deltas added AFTER fit. Per Meta's recommended workflow for bust/butt tuning. Keys are integer indices into the 45-dim identity vector; values are deltas added to the fitted coefficient. Components 0-19: body; 20-39: head; 40-44: hands.",
+    "deltas": {}
+  },
+  "render": {
+    "resolution": 1024,
+    "angles_deg": [0, 45, 90, 135, 180, 225, 270, 315],
+    "skin_rgb": [0.78, 0.62, 0.52]
+  },
+  "lod": 1
+}
