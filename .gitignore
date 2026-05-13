@@ -8,3 +8,6 @@ venv/
 
 # External upstream libraries — cloned locally, not vendored
 external/
+
+# Gated model weights (SMPL-X, A2B local copies, etc.)
+models/
