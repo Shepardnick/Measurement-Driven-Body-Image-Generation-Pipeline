@@ -1,0 +1,67 @@
+{
+  "stature_cm": {
+    "target_cm": 193.04,
+    "actual_cm": 193.31,
+    "error_cm": 0.27
+  },
+  "bust_cm": {
+    "target_cm": 107.2,
+    "actual_cm": 113.93,
+    "error_cm": 6.73
+  },
+  "waist_cm": {
+    "target_cm": 72.1,
+    "actual_cm": 83.99,
+    "error_cm": 11.89
+  },
+  "hip_cm": {
+    "target_cm": 138.7,
+    "actual_cm": 123.52,
+    "error_cm": -15.18
+  },
+  "shoulder_breadth_cm": {
+    "target_cm": 51.2,
+    "actual_cm": 39.34,
+    "error_cm": -11.86
+  },
+  "thigh_circ_cm": {
+    "target_cm": 66.0,
+    "actual_cm": 64.45,
+    "error_cm": -1.55
+  },
+  "calf_circ_cm": {
+    "target_cm": 43.2,
+    "actual_cm": 43.29,
+    "error_cm": 0.09
+  },
+  "upper_arm_circ_cm": {
+    "target_cm": 30.5,
+    "actual_cm": 31.7,
+    "error_cm": 1.2
+  },
+  "forearm_circ_cm": {
+    "target_cm": 26.7,
+    "actual_cm": 27.53,
+    "error_cm": 0.83
+  },
+  "neck_circ_cm": {
+    "target_cm": 35.6,
+    "actual_cm": 35.45,
+    "error_cm": -0.15
+  },
+  "inseam_cm": {
+    "target_cm": 90.2,
+    "actual_cm": 89.6,
+    "error_cm": -0.6
+  },
+  "head_circ_cm": {
+    "target_cm": 57.2,
+    "actual_cm": 64.14,
+    "error_cm": 6.94
+  },
+  "arm_length_cm": {
+    "target_cm": 66.0,
+    "actual_cm": 65.58,
+    "error_cm": -0.42
+  }
+}
