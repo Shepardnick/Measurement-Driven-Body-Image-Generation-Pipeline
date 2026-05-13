@@ -9,5 +9,13 @@ venv/
 # External upstream libraries — cloned locally, not vendored
 external/
 
+# MHR model assets (4.5 GB; downloaded from public release on demand)
+models/mhr/assets/
+models/mhr/assets.zip
+models/smplx/
+
+# Per-pass Python 3.12 venv for MHR (pymomentum-cpu only ships for cp312/cp313)
+.venv-mhr/
+
 # Gated model weights (SMPL-X, A2B local copies, etc.)
 models/
