@@ -5,3 +5,6 @@ __pycache__/
 venv/
 .env
 .DS_Store
+
+# External upstream libraries — cloned locally, not vendored
+external/

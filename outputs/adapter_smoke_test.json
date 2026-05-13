@@ -1,0 +1,68 @@
+{
+  "input_summary": {
+    "stature_cm": 193.04,
+    "gender": "female",
+    "wh_ratio": 0.52
+  },
+  "a2b": {
+    "nn": {
+      "ok": true,
+      "shape": [
+        10
+      ],
+      "betas": [
+        3.827565908432007,
+        1.227990746498108,
+        2.5037198066711426,
+        4.5403547286987305,
+        14.46120834350586,
+        -14.607851028442383,
+        -5.895393371582031,
+        6.386447906494141,
+        3.6873321533203125,
+        1.2163912057876587
+      ],
+      "magnitude_ok": false
+    },
+    "svr": {
+      "ok": true,
+      "shape": [
+        10
+      ],
+      "betas": [
+        5.6164498767178115,
+        -0.1468619820131214,
+        5.383261055693557,
+        -3.3058708981902467,
+        -18.33811299965383,
+        -6.2608585164422745,
+        17.143576693457707,
+        2.7600361327597103,
+        -5.251312232118135,
+        -16.259451804348405
+      ],
+      "magnitude_ok": false
+    }
+  },
+  "anthropometry": {
+    "repo_present": true,
+    "name_map_keys": [
+      "stature_cm",
+      "bust_cm",
+      "waist_cm",
+      "hip_cm",
+      "head_circ_cm",
+      "neck_circ_cm",
+      "upper_arm_circ_cm",
+      "forearm_circ_cm",
+      "thigh_circ_cm",
+      "calf_circ_cm",
+      "shoulder_breadth_cm",
+      "arm_length_cm",
+      "inseam_cm"
+    ],
+    "import_ok": true,
+    "from_verts_ok": null,
+    "from_verts_note": "SMPLX_MODEL_DIR not set; cannot instantiate MeasureSMPLX without SMPL-X .pkl weights. Adapter API verified at import level only."
+  }
+}
