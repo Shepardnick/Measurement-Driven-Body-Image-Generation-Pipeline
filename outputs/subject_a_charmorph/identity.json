@@ -1,0 +1,48 @@
+{
+  "name": "subject_a_charmorph",
+  "config_path": "configs/subject_a_charmorph.json",
+  "source": "charmorph",
+  "stature_scale": 1.1260007821874858,
+  "build_record": {
+    "preset": "type_ideal_shapely",
+    "ethnicity_l1": "Caucasian",
+    "morph_values_applied": {
+      "Legs_UpperlegsTone": 0.7,
+      "Shoulders_Tone": 0.59,
+      "Torso_BreastTone": 0.9,
+      "Neck_Length": 0.56,
+      "Shoulders_Mass": 0.38,
+      "Torso_BreastMass": 0.4,
+      "Arms_ForearmLength": 0.53,
+      "Legs_UpperlegLength": 0.65,
+      "Legs_LowerlegLength": 0.62,
+      "Pelvis_GluteusMass": 0.55,
+      "Arms_UpperarmLength": 0.737,
+      "Pelvis_GluteusTone": 0.85,
+      "Shoulders_PosZ": 0.59,
+      "Pelvis_GluteusSize": 0.5,
+      "Torso_Dorsi": 0.8,
+      "Legs_UpperlegSize": 0.65,
+      "Head_Size": 0.56,
+      "Pelvis_SizeX": 0.55,
+      "Waist_Size": 0.3,
+      "Body_Size": 0.46,
+      "Abdomen_Tone": 0.85,
+      "Stomach_Volume": 0.4,
+      "Stomach_LocalFat": 0.3,
+      "Arms_UpperarmTone": 0.6,
+      "Shoulders_SizeX": 0.45
+    }
+  },
+  "render_paths": [
+    "outputs/subject_a_charmorph/renders/view_000.png",
+    "outputs/subject_a_charmorph/renders/view_045.png",
+    "outputs/subject_a_charmorph/renders/view_090.png",
+    "outputs/subject_a_charmorph/renders/view_135.png",
+    "outputs/subject_a_charmorph/renders/view_180.png",
+    "outputs/subject_a_charmorph/renders/view_225.png",
+    "outputs/subject_a_charmorph/renders/view_270.png",
+    "outputs/subject_a_charmorph/renders/view_315.png"
+  ],
+  "mesh_path": "outputs/subject_a_charmorph/mesh.obj"
+}

@@ -5,6 +5,8 @@ __pycache__/
 venv/
 .env
 .DS_Store
+external/CharMorph/
+external/CharMorph-db/
 
 # External upstream libraries — cloned locally, not vendored
 external/
