@@ -94,6 +94,56 @@ def main() -> None:
     print(f"waist ring at y={waist_y:.3f}: {len(waist_ring)} verts")
     print(f"hip ring at y={hip_y:.3f}: {len(hip_ring)} verts")
 
+    # Thigh / knee / calf rings — restrict X to one leg only so we don't
+    # catch the other leg's vertices. Use a wider Y band for thigh/calf
+    # (sparse default-mesh sampling there) and a 4-vert hull minimum.
+    def leg_hull_ring(y_target: float, band_half: float = 0.01, x_min: float = 0.02, x_max: float = 0.30) -> list[int]:
+        mask = np.abs(v[:, 1] - y_target) < band_half
+        mask = mask & (v[:, 0] > x_min) & (v[:, 0] < x_max)
+        idxs = np.where(mask)[0]
+        if len(idxs) < 4:
+            return []
+        pts_xz = np.column_stack([v[idxs, 0], v[idxs, 2]])
+        try:
+            hull = ConvexHull(pts_xz)
+        except Exception:
+            return []
+        return idxs[hull.vertices].tolist()
+
+    thigh_y = H * 0.38
+    knee_y = H * 0.26
+    calf_y = H * 0.16
+    thigh_ring = leg_hull_ring(thigh_y, band_half=0.015)
+    knee_ring = leg_hull_ring(knee_y, band_half=0.008)
+    calf_ring = leg_hull_ring(calf_y, band_half=0.015)
+    print(f"thigh ring at y={thigh_y:.3f} (left leg): {len(thigh_ring)} verts")
+    print(f"knee ring at y={knee_y:.3f}: {len(knee_ring)} verts")
+    print(f"calf ring at y={calf_y:.3f}: {len(calf_ring)} verts")
+
+    # Arm rings — upper arm, forearm. Default body's arms are nearly
+    # vertical (close to body), so at shoulder-ish Y the arm sits in
+    # x ∈ [0.03, 0.20] roughly (left side). Use YZ-hull because for a
+    # vertical limb the cross-section is in the XZ plane same as a leg.
+    def arm_hull_ring(y_target: float, x_min: float = 0.03, x_max: float = 0.30, band_half: float = 0.01) -> list[int]:
+        mask = np.abs(v[:, 1] - y_target) < band_half
+        mask = mask & (v[:, 0] > x_min) & (v[:, 0] < x_max)
+        idxs = np.where(mask)[0]
+        if len(idxs) < 4:
+            return []
+        pts_xz = np.column_stack([v[idxs, 0], v[idxs, 2]])
+        try:
+            hull = ConvexHull(pts_xz)
+        except Exception:
+            return []
+        return idxs[hull.vertices].tolist()
+
+    upper_arm_y = shoulder_y - 0.02
+    forearm_y = shoulder_y - 0.10
+    upper_arm_ring = arm_hull_ring(upper_arm_y, x_min=0.03, x_max=0.20, band_half=0.012)
+    forearm_ring = arm_hull_ring(forearm_y, x_min=0.03, x_max=0.30, band_half=0.012)
+    print(f"upper_arm ring at y={upper_arm_y:.3f}: {len(upper_arm_ring)} verts")
+    print(f"forearm ring at y={forearm_y:.3f}: {len(forearm_ring)} verts")
+
     # Sanity: default-body perimeters (rough; will scale with body)
     def perim(ring):
         if not ring:
@@ -115,6 +165,11 @@ def main() -> None:
         "bust_ring": bust_ring,
         "waist_ring": waist_ring,
         "hip_ring": hip_ring,
+        "thigh_ring": thigh_ring,
+        "knee_ring": knee_ring,
+        "calf_ring": calf_ring,
+        "upper_arm_ring": upper_arm_ring,
+        "forearm_ring": forearm_ring,
         "coord_convention": "applied to vertices after Z-up→Y-up swap "
                             "(x_world, y_world=z_blender, z_world=-y_blender)",
     }

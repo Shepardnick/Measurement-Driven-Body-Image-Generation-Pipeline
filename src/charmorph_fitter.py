@@ -280,10 +280,12 @@ def measure_torch(verts: torch.Tensor, landmarks: dict) -> dict[str, torch.Tenso
     )
 
     def perim(ring: list[int]) -> torch.Tensor:
+        if not ring:
+            return torch.tensor(0.0, dtype=verts.dtype, device=verts.device)
         pts = verts[ring]
         return torch.linalg.norm(pts - torch.roll(pts, shifts=-1, dims=0), dim=1).sum()
 
-    return {
+    out = {
         "stature_cm": stature,
         "shoulder_breadth_cm": shoulder,
         "hip_width_cm": hip_w,
@@ -291,6 +293,19 @@ def measure_torch(verts: torch.Tensor, landmarks: dict) -> dict[str, torch.Tenso
         "waist_cm": perim(landmarks["waist_ring"]),
         "hip_cm": perim(landmarks["hip_ring"]),
     }
+    # Optional rings — present if landmarks were built with limb rings
+    if landmarks.get("thigh_ring"):
+        out["thigh_circ_cm"] = perim(landmarks["thigh_ring"]) * 2.0  # ring is one leg; doubling gives "per-leg sum" — actually leave as single leg
+        out["thigh_circ_cm"] = perim(landmarks["thigh_ring"])
+    if landmarks.get("knee_ring"):
+        out["knee_circ_cm"] = perim(landmarks["knee_ring"])
+    if landmarks.get("calf_ring"):
+        out["calf_circ_cm"] = perim(landmarks["calf_ring"])
+    if landmarks.get("upper_arm_ring"):
+        out["upper_arm_circ_cm"] = perim(landmarks["upper_arm_ring"])
+    if landmarks.get("forearm_ring"):
+        out["forearm_circ_cm"] = perim(landmarks["forearm_ring"])
+    return out
 
 
 # ---- Fitter ----
