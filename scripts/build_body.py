@@ -237,9 +237,29 @@ def main() -> None:
     angles = tuple(r_cfg.get("angles_deg", [0, 45, 90, 135, 180, 225, 270, 315]))
     res = r_cfg.get("resolution", 1024)
     skin = tuple(r_cfg.get("skin_rgb", [0.78, 0.62, 0.52]))
-    print(f"  rendering {len(angles)} views at {res}×{res}...")
+
+    # Optional texture support (pass 9)
+    tex_path = r_cfg.get("texture")
+    uvs = None
+    if tex_path:
+        tex_path = REPO_ROOT / tex_path if not Path(tex_path).is_absolute() else Path(tex_path)
+        uvs_npz = REPO_ROOT / r_cfg.get("uvs_path", "data/charmorph_female_uvs.npz")
+        if uvs_npz.exists():
+            uvs = np.load(uvs_npz)["uvs"]
+
+    bright = r_cfg.get("bright_global", True)
+    print(f"  rendering {len(angles)} views at {res}×{res}"
+          f"{' (textured)' if tex_path else ''}"
+          f"{' (bright global)' if bright else ''}...")
     written = render_views_quality(
-        mesh, renders_dir, angles_deg=angles, resolution=res, skin_rgb=skin
+        mesh,
+        renders_dir,
+        angles_deg=angles,
+        resolution=res,
+        skin_rgb=skin,
+        texture_path=tex_path,
+        uvs=uvs,
+        bright_global=bright,
     )
     for p in written:
         print(f"    {p.relative_to(REPO_ROOT)}")

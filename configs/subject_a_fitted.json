@@ -26,6 +26,9 @@
   "render": {
     "resolution": 1024,
     "angles_deg": [0, 45, 90, 135, 180, 225, 270, 315],
-    "skin_rgb": [0.82, 0.66, 0.55]
+    "skin_rgb": [0.82, 0.66, 0.55],
+    "texture": "external/CharMorph-db/characters/mb_female/textures/albedo.png",
+    "uvs_path": "data/charmorph_female_uvs.npz",
+    "bright_global": true
   }
 }
