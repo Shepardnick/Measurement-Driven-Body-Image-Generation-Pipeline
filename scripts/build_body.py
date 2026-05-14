@@ -34,12 +34,19 @@ def _build_charmorph(config: dict) -> tuple[trimesh.Trimesh, dict]:
 
     cm = config.get("charmorph", {})
     preset_name = cm.get("preset")
-    # Layer 1: preset
+    # Layer 1: preset (mutable; optimizer may modify these)
     morph_values: dict[str, float] = {}
     if preset_name:
         morph_values.update(load_preset(preset_name))
     # Layer 2: manual morph_values from config (back-compat alias: morph_overrides)
-    morph_values.update(cm.get("morph_values") or cm.get("morph_overrides") or {})
+    # NOTE: these are mutable too unless listed in `freeze_morphs` below
+    user_morph_values = cm.get("morph_values") or cm.get("morph_overrides") or {}
+    morph_values.update(user_morph_values)
+    # Layer 3: explicitly frozen morphs that the optimizer must not touch.
+    # Default: every key the user set in morph_values is frozen (so user
+    # intent isn't overwritten by the fit). Override with explicit
+    # "freeze_morphs" list in config if needed.
+    frozen_morphs = set(cm.get("freeze_morphs", list(user_morph_values.keys())))
 
     ethnicity = cm.get("ethnicity_l1", "Caucasian")
 
@@ -71,8 +78,15 @@ def _build_charmorph(config: dict) -> tuple[trimesh.Trimesh, dict]:
 
         # Drop Body_Size from optimize (it's an empty morph in CharMorph-db);
         # use uniform mesh scale post-fit to handle stature instead.
-        optimize_keys = [k for k in expand_optimize_groups(cm.get("optimize_morphs", ["body"]))
-                         if k != "Body_Size"]
+        # Also drop any morphs the user explicitly froze so the fit can't
+        # overwrite intentional tone/mass settings.
+        optimize_keys = [
+            k for k in expand_optimize_groups(cm.get("optimize_morphs", ["body"]))
+            if k != "Body_Size" and k not in frozen_morphs
+        ]
+        print(f"  freeze list ({len(frozen_morphs)}): {sorted(frozen_morphs)[:8]}"
+              f"{'...' if len(frozen_morphs) > 8 else ''}")
+        print(f"  optimize_keys after freeze: {len(optimize_keys)}")
         fit_cfg = cm.get("fitter", {})
 
         # Iterative pre-normalize/fit/measure/refine. After the first fit the
